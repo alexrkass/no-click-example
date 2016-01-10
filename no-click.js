@@ -21,7 +21,6 @@ module.exports.Component = registerComponent('no-click-look-controls', {
     scene.addBehavior(this);
     this.previousPosition = new THREE.Vector3();
     this.deltaPosition = new THREE.Vector3();
-    console.log("ready")
   },
 
   setupMouseControls: function () {
@@ -52,7 +51,6 @@ module.exports.Component = registerComponent('no-click-look-controls', {
     canvasEl.addEventListener('touchstart', this.onTouchStart.bind(this));
     canvasEl.addEventListener('touchmove', this.onTouchMove.bind(this));
     canvasEl.addEventListener('touchend', this.onTouchEnd.bind(this));
-    console.log("added");
   },
 
   update: function () {
@@ -60,7 +58,6 @@ module.exports.Component = registerComponent('no-click-look-controls', {
     this.controls.update();
     this.updateOrientation();
     this.updatePosition();
-    console.log("updated");
   },
 
   updateOrientation: (function () {
