@@ -196,4 +196,4 @@ module.exports.Component = registerComponent('no-click-look-controls', {
   onTouchEnd: function () {
     this.touchStarted = false;
   }
-});
+};
